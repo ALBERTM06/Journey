@@ -68,12 +68,24 @@
 
 #My Solution:
 # For loop: numbers 1–20
-for x in range (1,21):
-    print(x)
+# for x in range (1,21):
+#     print(x)
+#
+# # While loop: even numbers 0–50
+# i = 0
+# while i < 51:
+#     if i % 2 == 0:
+#         print(i)
+#     i+=1
 
-# While loop: even numbers 0–50
-i = 0
-while i < 51:
-    if i % 2 == 0:
-        print(i)
-    i+=1
+# 5. Functions
+# 👉 Write a program that defines a function greet(name) that:
+# Prints "Hello, <name>! Welcome to Python practice!"
+# Call it with at least 3 different names.
+
+def greet(name):
+    print(f"Hello, {name}! Welcome to python practice!")
+greet("Albert")
+greet("Leila")
+greet("Josh")
+
