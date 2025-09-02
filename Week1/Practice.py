@@ -44,18 +44,36 @@
 # Prints whether it is positive, negative, or zero.
 # Then check if the number is even or odd.
 
-x = int(input("Enter number: "))
+#My Solution:
+# x = int(input("Enter number: "))
+#
+# if x > 0:
+#     sign = "positive"
+# elif x < 0:
+#     sign = "negative"
+# else:
+#     print("Your number is zero!")
+#
+# if (x % 2) == 0:
+#     parity = "even"
+# else:
+#     parity = "odd"
+#
+# print(f"{x} is {sign} and {parity}")
 
-if x > 0:
-    sign = "positive"
-elif x < 0:
-    sign = "negative"
-else:
-    print("Your number is zero!")
+# 4. Loops
+# 👉 Write a program that:
+# Prints all numbers from 1 to 20 using a for loop.
+# Prints all even numbers between 1 and 50 using a while loop.
 
-if (x % 2) == 0:
-    parity = "even"
-else:
-    parity = "odd"
+#My Solution:
+# For loop: numbers 1–20
+for x in range (1,21):
+    print(x)
 
-print(f"{x} is {sign} and {parity}")
+# While loop: even numbers 0–50
+i = 0
+while i < 51:
+    if i % 2 == 0:
+        print(i)
+    i+=1
