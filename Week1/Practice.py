@@ -16,24 +16,46 @@
 # Uses comparison operators (>, <, ==) to compare them.
 
 #My Solution:
-x = int(input("Enter first number: "))
-y = int(input("Enter second number: "))
+# x = int(input("Enter first number: "))
+# y = int(input("Enter second number: "))
+#
+# sum = x + y
+# print(sum)
+#
+# difference = x - y
+# print(difference)
+#
+# product = x * y
+# print(product)
+#
+# mod = x % y
+# print(mod)
+#
+# if x == y:
+#     print("These numbers are equal")
+# elif x > y:
+#     print("The first number is greater than the second!")
+# else:
+#     print("The second number is greater than the first!")
 
-sum = x + y
-print(sum)
+# 3. Conditionals (if/else)
+# 👉 Write a program that:
+# Asks the user for a number.
+# Prints whether it is positive, negative, or zero.
+# Then check if the number is even or odd.
 
-difference = x - y
-print(difference)
+x = int(input("Enter number: "))
 
-product = x * y
-print(product)
-
-mod = x % y
-print(mod)
-
-if x == y:
-    print("These numbers are equal")
-elif x > y:
-    print("The first number is greater than the second!")
+if x > 0:
+    sign = "positive"
+elif x < 0:
+    sign = "negative"
 else:
-    print("The second number is greater than the first!")
+    print("Your number is zero!")
+
+if (x % 2) == 0:
+    parity = "even"
+else:
+    parity = "odd"
+
+print(f"{x} is {sign} and {parity}")
