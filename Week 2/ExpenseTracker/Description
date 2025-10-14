@@ -1,0 +1,6 @@
+Create a simple text-based Python program that:
+1. Lets a user add expenses (item + amount)
+2. Saves expenses to a JSON file
+3. Loads existing expenses when the program starts
+4. Displays all expenses and the total spent
+5. Handles input errors gracefully
