@@ -17,8 +17,8 @@ I’m starting from the basics and building up toward practical skills I can use
 ## 🗓 Roadmap (2 Months)
 **Month 1 – Python + Data Basics**  
 - Week 1: Python fundamentals (loops, lists, dicts, file handling).  
-- Week 2: Pandas basics (loading, cleaning, exploring CSVs).  
-- Week 3: NumPy + more pandas practice.  
+- Week 2: NumPy + more pandas practice. 
+- Week 3: Pandas basics (loading, cleaning, exploring CSVs).  
 - Week 4: Mini-project (simple data analysis project).  
 
 **Month 2 – Projects & Deeper Tools**  
