@@ -44,7 +44,7 @@ print(np.vstack([a, b]))     # Vertical stack → 2x3 matrix
 print(np.hstack([a, b]))     # Horizontal stack → [1 2 3 4 5 6]
 
 #np.where — conditional element selection
-#np.where(condition, value_if_true, value_if_false)
+#np.where(condition, value_if_true, value_if_false)v
 temps = np.array([22, 35, 18, 40, 28, 15])
 labels = np.where(temps > 30, "Hot", "OK")
 print(labels)                # ['OK' 'Hot' 'OK' 'Hot' 'OK' 'OK']
