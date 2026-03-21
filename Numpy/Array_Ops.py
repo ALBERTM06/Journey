@@ -53,3 +53,5 @@ print(labels)                # ['OK' 'Hot' 'OK' 'Hot' 'OK' 'OK']
 ndvi = np.array([0.1, 0.6, -0.05, 0.75, 0.3])
 land_type = np.where(ndvi > 0.5, "Vegetation", "Non-vegetation")
 print(land_type)
+
+
