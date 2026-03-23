@@ -55,4 +55,8 @@ import numpy as np
 # print(land_type)
 #
 
+a = np.array([1, 2])
+b = np.array([4,5,6])
+
+print(np.hstack([a,b]))
 

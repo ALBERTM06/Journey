@@ -1,6 +1,6 @@
 # my_list = [1,2,3]
 #
-# import numpy as np
+import numpy as np
 # arr = np.array(my_list)
 # #print(my_list)
 #
@@ -19,8 +19,8 @@
 # arr5 = np.ones((4,4))
 # #print(arr5)
 #
-# arr6 = np.linspace(0,10,10)
-# #print(arr6)
+arr6 = np.linspace(0,10,10)
+print(arr6)
 #
 # arr7 = np.eye(4)
 # #print(arr7)

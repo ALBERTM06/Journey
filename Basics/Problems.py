@@ -24,8 +24,8 @@
 # else:
 #     print("Fail")
 #
-# print("Maximum Grade: " , max(Grades))
-# print("Minimum Grade: " , min(Grades))
+# print(f"Maximum Grade: {max(Grades)}")
+# print(f"Minimum Grade: {min(Grades)}")
 #
 # Grades.sort(reverse = True)
 # print(Grades)
