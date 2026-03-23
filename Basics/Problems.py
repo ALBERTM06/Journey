@@ -41,7 +41,7 @@
 
 #Solution2
 # shopping = ["apple", "Banana", "carrot", "Dragonfruit", "eggplant"]
-# print(shopping[0], shopping[4])
+# print(shopping[0], shopping[-1])
 #
 # shopping2=[item for item in shopping if len(item)>6]
 # shopping2.sort()
@@ -56,16 +56,18 @@
 # Print whether the list contains more positive numbers or more negative numbers (or if it's equal)
 # Replace the last item in the list with the number 99 and print the updated list
 
-Nums = [-83, 17, -31, -100, 56, 94, 67, -75, -75, -11]
-list1 = [n for n in Nums if n > 0]
-print(list1)
-list2 = [n for n in Nums if n<0]
-print(list2)
-
-if len(list1) > len(list2):
-    print("Nums contains more positive numbers than negative numbers")
-else:
-    print("Nums contains more negative numbers than positive numbers")
-
-Nums[9] = 99
-print(Nums)
+# Nums = [-83, 17, -31, -100, 56, 94, 67, -75, -75, -11]
+# list1 = [n for n in Nums if n > 0]
+# print(list1)
+# list2 = [n for n in Nums if n<0]
+# print(list2)
+#
+# if len(list1) > len(list2):
+#     print("Nums contains more positive numbers than negative numbers")
+# elif len(list2) > len(list1):
+#     print("Nums contains more negative numbers than positive numbers")
+# else:
+#     print("Equal positive and negative numbers")
+#
+# Nums[-1] = 99
+# print(Nums)
