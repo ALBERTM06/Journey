@@ -179,3 +179,15 @@
 # items = [sorted(sublist) for sublist in items]
 # items = sorted(items)
 # print(items)
+
+#Example 2
+# shopping = ["apple", "Banana", "carrot", "Dragonfruit", "eggplant"]
+# #shopping2 = []
+# # for item in shopping:
+# #     if len(item) > 6:
+# #         shopping2.append(item)
+# # print(shopping2)
+#
+# #Using list comprehension:
+# shopping2 = [item for item in shopping if len(item)>6]
+# print(shopping2)
