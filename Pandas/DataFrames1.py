@@ -41,3 +41,17 @@ print(df.iloc[1, 2])
 # Subset using lists of labels or positions
 print(df.loc[['A','B'], ['W','Y']])
 print(df.iloc[[0,1], [0,2]])
+
+#Additional ways of adding columns to DataFrames:
+# From a list
+df['new'] = [1, 2, 3, 4, 5]
+
+# A single constant value (broadcasts to every row)
+df['country'] = 'Kenya'
+
+# From an existing Series
+s = pd.Series([10, 20, 30, 40, 50], index=['A','B','C','D','E'])
+df['new'] = s
+
+# From an operation (what the course showed)
+df['AA'] = df['W'] + df['Y']
