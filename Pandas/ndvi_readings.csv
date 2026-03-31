@@ -1,0 +1,16 @@
+Location,Date,NDVI,Latitude,Longitude,Notes
+Karura Forest,2026-01-05,0.72,1.2333,36.8167,Dense canopy cover observed
+Karura Forest,2026-01-19,0.68,1.2333,36.8167,Slight dryness on eastern edge
+Karura Forest,2026-02-10,0.74,1.2333,36.8167,Recovery after short rains
+Ngong Hills,2026-01-07,0.61,1.3667,36.6500,Grassland with scattered shrubs
+Ngong Hills,2026-01-28,0.55,1.3667,36.6500,Dry season stress visible
+Ngong Hills,2026-02-15,0.63,1.3667,36.6500,Partial green-up after rain
+Nairobi National Park,2026-01-10,0.58,1.3667,36.8500,Mixed savanna
+Nairobi National Park,2026-02-01,0.52,1.3667,36.8500,Reduced cover near boundary
+Nairobi National Park,2026-02-20,0.60,1.3667,36.8500,Stable reading
+Limuru Tea Fields,2026-01-12,0.81,1.1167,36.6333,Active growing season
+Limuru Tea Fields,2026-01-30,0.78,1.1167,36.6333,Consistent high NDVI
+Limuru Tea Fields,2026-02-18,0.83,1.1167,36.6333,Post-rain flush
+Athi River Basin,2026-01-15,0.31,1.4500,37.0000,Sparse vegetation semi-arid zone
+Athi River Basin,2026-02-03,0.28,1.4500,37.0000,Further drying trend
+Athi River Basin,2026-02-22,0.35,1.4500,37.0000,Minor recovery near riverbank
