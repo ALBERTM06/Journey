@@ -38,7 +38,9 @@ population = pd.Series(
 # ============================================================
 
 # Your answer:
-
+print(population['Garissa'])                        # a) by label
+print(population.iloc[9])                           # b) by position
+print(population[['Mombasa', 'Kisumu', 'Malindi']]) # c) list of labels
 
 # ============================================================
 # EXERCISE 2 - Series: arithmetic and broadcasting
@@ -50,7 +52,11 @@ population = pd.Series(
 # ============================================================
 
 # Your answer:
+pop_millions = (population / 1_000_000).round(2)
+print(pop_millions)
 
+pop_share = ((population / population.sum()) * 100).round(2)
+print(pop_share)
 
 # ============================================================
 # EXERCISE 3 - Series: alignment
@@ -62,7 +68,12 @@ population = pd.Series(
 # ============================================================
 
 # Your answer:
-
+s1 = pd.Series([100, 200, 300], index=['A', 'B', 'C'])
+s2 = pd.Series([10, 20, 30],  index=['B', 'C', 'D'])
+print(s1 + s2)
+# Index A only exists in s1, D only exists in s2.
+# Both produce NaN because pandas can't find a matching value
+# in the other Series to add to them.
 
 # ============================================================
 # EXERCISE 4 - DataFrame basics: selecting columns
@@ -73,7 +84,9 @@ population = pd.Series(
 # ============================================================
 
 # Your answer:
-
+print(type(weather['Temperature']))             # a) Series
+print(type(weather[['Temperature',
+                     'Humidity', 'Rainfall']])) # b) DataFrame
 
 # ============================================================
 # EXERCISE 5 - DataFrame basics: adding columns
@@ -85,7 +98,9 @@ population = pd.Series(
 # ============================================================
 
 # Your answer:
-
+weather['Heat Index'] = weather['Temperature'] + (weather['Humidity'] / 10)
+weather['Arid Flag']  = weather['Category'] == 'Arid'
+print(weather)
 
 # ============================================================
 # EXERCISE 6 - DataFrame basics: dropping
