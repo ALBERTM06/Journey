@@ -111,7 +111,11 @@ print(weather)
 # ============================================================
 
 # Your answer:
-
+print("Before:", weather.shape)
+weather.drop('Wind Speed', axis=1, inplace=True)
+weather.drop(['Garissa', 'Malindi'], axis=0, inplace=True)
+print("After: ", weather.shape)
+print(weather)
 
 # ============================================================
 # EXERCISE 7 - Indexing: .loc and .iloc
@@ -123,7 +127,11 @@ print(weather)
 # ============================================================
 
 # Your answer:
-
+print(weather.loc['Thika'])                                    # a)
+print(weather.iloc[5])                                         # b) Thika is at position 5
+print(weather.loc['Nyeri', 'Humidity'])                        # c)
+print(weather.loc[['Nairobi','Kisumu','Nakuru'],               # d)
+                  ['Temperature', 'Rainfall']])
 
 # ============================================================
 # EXERCISE 8 - Indexing: slicing with .iloc
@@ -132,7 +140,7 @@ print(weather)
 # ============================================================
 
 # Your answer:
-
+print(weather.iloc[:4, :3])
 
 # ============================================================
 # EXERCISE 9 - Conditional filtering: single condition
@@ -142,7 +150,9 @@ print(weather)
 # ============================================================
 
 # Your answer:
-
+print(weather[weather['Temperature'] > 25])                    # a)
+print(weather[(weather['Humidity'] >= 60) &
+              (weather['Humidity'] <= 75)])                     # b)
 
 # ============================================================
 # EXERCISE 10 - Conditional filtering: multiple conditions
@@ -154,7 +164,15 @@ print(weather)
 # ============================================================
 
 # Your answer:
+print(weather[(weather['Category'] == 'Coastal') &
+              (weather['Humidity'] > 83)])  # a)
 
+print(weather[(weather['Category'] == 'Arid') |
+              (weather['Temperature'] < 20)])  # b)
+
+inland_warm = weather[(weather['Category'] == 'Inland') &
+                      (weather['Temperature'] > 22)]
+print(inland_warm[['Temperature', 'Humidity']])  # c)
 
 # ============================================================
 # EXERCISE 11 - Missing data
