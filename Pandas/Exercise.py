@@ -184,7 +184,10 @@ print(inland_warm[['Temperature', 'Humidity']])  # c)
 # ============================================================
 
 # Your answer:
-
+print(weather.isnull().sum())                                   # a)
+weather = weather.dropna(subset=['Rainfall'])                   # b)
+print(weather.isnull().sum())                                   # c)
+print(weather.shape)
 
 # ============================================================
 # EXERCISE 12 - Missing data: filling
