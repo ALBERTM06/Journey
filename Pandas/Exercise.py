@@ -227,7 +227,11 @@ print(weather.isnull().sum())
 # ============================================================
 
 # Your answer:
+print(weather.groupby('Category')[['Temperature',
+                                   'Humidity',
+                                   'Rainfall']].mean())  # a)
 
+print(weather.groupby('Category')['Temperature'].idxmax())  # b)
 
 # ============================================================
 # EXERCISE 14 - GroupBy: multiple aggregations
