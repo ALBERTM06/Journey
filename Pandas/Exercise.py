@@ -257,3 +257,6 @@ print(weather.groupby('Category')['Temperature']
 # ============================================================
 
 # Your answer:
+weather.to_csv('kenya_weather.csv', index_label='City')         # a)
+df_loaded = pd.read_csv('kenya_weather.csv', index_col='City')  # b)
+print(df_loaded.equals(weather))                                 # c)
