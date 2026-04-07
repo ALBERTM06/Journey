@@ -241,7 +241,8 @@ print(weather.groupby('Category')['Temperature'].idxmax())  # b)
 # ============================================================
 
 # Your answer:
-
+print(weather.groupby('Category')['Temperature']
+      .agg(['mean', 'min', 'max', 'count']))
 
 # ============================================================
 # EXERCISE 15 - Reading and writing CSVs
