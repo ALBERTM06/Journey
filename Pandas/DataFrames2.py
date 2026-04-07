@@ -4,7 +4,7 @@ from numpy.random import randn
 
 np.random.seed(101)
 df = pd.DataFrame(randn(5,4),['A','B','C','D','E'],['W','X','Y','Z'])
-#print(df)
+print(df)
 
 #Conditional selection
 #print(df>0)
@@ -23,17 +23,17 @@ df = pd.DataFrame(randn(5,4),['A','B','C','D','E'],['W','X','Y','Z'])
 #Defining many variables like this takes up more and more memory over time
 
 #The above can thus be shortened as follows:
-# result_df = df[df['W']>0][['X','Y']] #Stack commands
-# print(result_df)
+result_df = df[df['W']>0][['X','Y']] #Stack commands
+print(result_df)
 
 #Conditional selection with multiple conditions
 #For an 'and' operation
-example = df[(df['W']>0) & (df['Y']>1)] #We use the ampersand symbol not 'and'
+#example = df[(df['W']>0) & (df['Y']>1)] #We use the ampersand symbol not 'and'
 # to combine the two conditionals and () to show clear distinction
 #print(example)
 
 #For an 'or' operation
-example2 = df[(df['W']>0) | (df['Y']>1)] #We use the '|' symbol not 'or'
+#example2 = df[(df['W']>0) | (df['Y']>1)] #We use the '|' symbol not 'or'
 # to combine the two conditionals
 
 #How to reset index
@@ -44,7 +44,10 @@ example2 = df[(df['W']>0) | (df['Y']>1)] #We use the '|' symbol not 'or'
 new_index = 'NBO MSA KMU NYE KIA'.split()
 df['States'] = new_index
 print(df)
-print(df.set_index('States')) #You call the .set_index() method. Original remains unchanged
+print(df.set_index('States', inplace= True)) #You call the .set_index() method. Original remains unchanged
 
+new_row = pd.DataFrame(randn(1,4), ['TUR'], ['W','X','Y','Z'])
+df = pd.concat([df,new_row])
+print(df)
 
 
